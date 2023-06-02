@@ -1,6 +1,5 @@
 // ignore_for_file: prefer_const_constructors
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -8,6 +7,8 @@ void main() {
 }
 
 class App extends StatelessWidget {
+  const App({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -37,7 +38,7 @@ class App extends StatelessWidget {
                       Text(
                         "Welcome back",
                         style: TextStyle(
-                          color: Colors.white.withOpacity(0.7),
+                          color: Colors.white.withOpacity(0.75),
                           fontSize: 20,
                         ),
                       ),
